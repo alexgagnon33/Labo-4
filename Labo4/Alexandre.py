@@ -1,12 +1,13 @@
 Problème avec les classes, doit relire les notes de cours et lire plus encore
-def lire_donnees(path : str):
 
-    with open(path, "r", encoding="UTF-8") as f:
-        numero = ""
-        mdp = []
+def lire_donnees():
+
+    with open("Labo4") as f:
         donnees = f.readlines()
+        print(donnees)
+lire_donnees()
 
-class Utilisateur:
+"class Utilisateur:
     def __init__(self, numero: str, mdp: int):
         self.numero = numero
         self.mdp = mdp
